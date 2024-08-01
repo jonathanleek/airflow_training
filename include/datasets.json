@@ -1,0 +1,20 @@
+[
+    {
+        "dataset_name": "dataset_1",
+        "schedule_interval": "@daily",
+        "tasks": [
+            {"task_id": "extract", "script": "extract_dataset_1.py"},
+            {"task_id": "transform", "script": "transform_dataset_1.py"},
+            {"task_id": "load", "script": "load_dataset_1.py"}
+        ]
+    },
+    {
+        "dataset_name": "dataset_2",
+        "schedule_interval": "@weekly",
+        "tasks": [
+            {"task_id": "extract", "script": "extract_dataset_2.py"},
+            {"task_id": "transform", "script": "transform_dataset_2.py"},
+            {"task_id": "load", "script": "load_dataset_2.py"}
+        ]
+    }
+]
